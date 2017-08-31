@@ -7,10 +7,10 @@ public class Main {
         changeIt(i);
 
         // what is the value of 'i' now?
-        // System.out.println(i);
+         System.out.println(i);
     }
 
-    private static void changeIt(int i) {
+    private static void changeIt(Integer i) {
         i = 15;
     }
 }

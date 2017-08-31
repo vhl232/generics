@@ -5,6 +5,10 @@ public class Runner extends Thread {
     private int number;
     private double speed;
 
+    public double getDistance() {
+        return distance;
+    }
+
     private double distance;
 
     public Runner(String name, int number, double speed) {
@@ -29,6 +33,7 @@ public class Runner extends Thread {
 
     @Override
     public String toString() {
+
         return String.format("Runner %s(%d) run %.3f meters.", name, number, distance);
     }
 }

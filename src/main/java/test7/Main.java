@@ -21,11 +21,12 @@ public class Main {
 
         // will the names and/or age change?
         for (Person p : people) {
-            //System.out.println(p);
+            System.out.println(p);
         }
     }
 
     private static void changeIt(Person p) {
+        System.out.println(p);
         p = new Person("Tuzik", 100500);
     }
 }

@@ -7,7 +7,7 @@ public class Main {
         i = changeIt(i);
 
         // what is the value of 'i' now?
-        // System.out.println(i);
+         System.out.println(i);
     }
 
     private static Integer changeIt(int i) {

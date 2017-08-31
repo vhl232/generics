@@ -17,7 +17,7 @@ public class Main {
 
         // will the names and/or age change?
         for (Person p : people) {
-            //System.out.println(p);
+            System.out.println(p);
         }
 
     }

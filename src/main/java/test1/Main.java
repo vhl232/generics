@@ -8,7 +8,7 @@ public class Main {
         changeIt(apple);
 
         // what is the color of the apple now?
-        // System.out.println(apple.getColor());
+         System.out.println(apple.getColor());
     }
 
     private static void changeIt(Apple apple) {

@@ -1,8 +1,8 @@
 package test10;
 
 public class Dog {
-    public String name;
-    public Breed breed;
+    private String name;
+    private Breed breed;
 
     public Dog(String name, Breed breed) {
         this.name = name;
@@ -13,15 +13,15 @@ public class Dog {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Dog setName(String name) {
+        return new Dog(name,breed);
     }
 
     public Breed getBreed() {
         return breed;
     }
 
-    public void setBreed(Breed breed) {
-        this.breed = breed;
+    public Dog setBreed(Breed breed) {
+        return new Dog(name,breed);
     }
 }

@@ -12,7 +12,7 @@ public class Main {
         changeIt(dogs);
 
         // how many dogs in the list now?
-        // System.out.println(dogs.size());
+         System.out.println(dogs.size());
     }
 
     private static void changeIt(List<Dog> dogs) {

@@ -27,6 +27,12 @@ public class Main {
         System.out.println("\n");
 
         // stop runners here
+        for (Map.Entry<String,Thread> pair:map.entrySet()
+             ) { pair.getValue().interrupt();
+
+        }
+
+
         // ...
 
         for (Map.Entry<String, Thread> pair : map.entrySet()) {
@@ -36,6 +42,24 @@ public class Main {
         }
 
         // print which thread won here. the name of the thread
+
+        double maxD=0;
+        String nameM = null;
+        for (Map.Entry<String,Thread> pair:map.entrySet()
+                ) {
+            Thread value = pair.getValue();
+           double d = ((Runner)value).getDistance();
+           //nameM = pair.getKey();
+
+           if(d > maxD){
+               maxD = d;
+               nameM = pair.getKey();
+
+           }
+        }
+        System.out.println(nameM);
+
+
         // ...
     }
 }
