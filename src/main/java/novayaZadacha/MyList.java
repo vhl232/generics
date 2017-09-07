@@ -1,6 +1,6 @@
 package novayaZadacha;
 
-public class MyList<D> {
+public class MyList<D> implements MyListI<D>{
 
     private int size = 0;
 
@@ -30,25 +30,66 @@ public class MyList<D> {
 
     }
 
-    public boolean remove(int index){
+    @Override
+    public void add(int index, D element) {
+
+    }
+
+    @Override
+    public D set(int index, D element) {
+        return null;
+    }
+
+    public D remove(int index){
 
         if(index<size) {
+            D element = (D) massiv[index];
+
             for (int i = index; i < size; i++) {
 
                 massiv[i] = massiv[i + 1];
 
             }
             size--;
-            return true;
+            return element ;
         }
-        return false;
+        return null;
 
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        return false;
+    }
+
+    @Override
+    public void clear() {
+
+    }
+
+    @Override
+    public int indexOf(Object o) {
+        return 0;
+    }
+
+    @Override
+    public int lastIndexOf(Object o) {
+        return 0;
     }
 
     public  int size(){
         return size;
     }
 
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public boolean contains(Object o) {
+        return false;
+    }
 
 
 }
